@@ -22,7 +22,7 @@ h=st.number_input('Enter Humidity:')
 ph=st.number_input('Enter pH')
 r=st.number_input('Enter Rainfall:')
 
-if st.button('Recommend crop')
+if st.button('Recommend crop'):
    data=[[n,p,k,t,h,ph,r]]
    result=classifier.predict(data)[0]
    st.success(result)
